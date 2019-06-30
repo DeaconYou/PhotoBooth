@@ -19,6 +19,7 @@
 		7885EED422C94000003C1D27 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED022C93FFF003C1D27 /* StringUtils.m */; };
 		7885EED522C94000003C1D27 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED122C93FFF003C1D27 /* UIUtils.m */; };
 		7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED822C941F7003C1D27 /* AsyncOperationManager.m */; };
+		7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEDE22C9432D003C1D27 /* FileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		7885EED322C94000003C1D27 /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
 		7885EED822C941F7003C1D27 /* AsyncOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperationManager.m; sourceTree = "<group>"; };
 		7885EED922C941F7003C1D27 /* AsyncOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperationManager.h; sourceTree = "<group>"; };
+		7885EEDD22C9432D003C1D27 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		7885EEDE22C9432D003C1D27 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		7885EE9E22C9361D003C1D27 /* PhotoBooth */ = {
 			isa = PBXGroup;
 			children = (
+				7885EEDB22C942BE003C1D27 /* Data */,
 				7885EED722C941B1003C1D27 /* Threading */,
 				7885EECF22C93F69003C1D27 /* Utils */,
 				7885EECA22C93E6C003C1D27 /* Controllers */,
@@ -165,6 +169,23 @@
 				7885EED822C941F7003C1D27 /* AsyncOperationManager.m */,
 			);
 			path = Threading;
+			sourceTree = "<group>";
+		};
+		7885EEDB22C942BE003C1D27 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7885EEDC22C942CF003C1D27 /* File */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7885EEDC22C942CF003C1D27 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				7885EEDD22C9432D003C1D27 /* FileManager.h */,
+				7885EEDE22C9432D003C1D27 /* FileManager.m */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 				7885EEA422C9361D003C1D27 /* ViewController.m in Sources */,
 				7885EED422C94000003C1D27 /* StringUtils.m in Sources */,
 				7885EEAF22C9361F003C1D27 /* main.m in Sources */,
+				7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */,
 				7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */,
 				7885EEA122C9361D003C1D27 /* AppDelegate.m in Sources */,
 				7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */,
