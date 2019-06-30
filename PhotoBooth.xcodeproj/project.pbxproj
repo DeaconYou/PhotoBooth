@@ -22,6 +22,7 @@
 		7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEDE22C9432D003C1D27 /* FileManager.m */; };
 		7885EEE522C943B9003C1D27 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE222C943B9003C1D27 /* Photo.m */; };
 		7885EEE622C943B9003C1D27 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE322C943B9003C1D27 /* DatabaseManager.m */; };
+		7885EEE922C9446A003C1D27 /* DataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE722C94469003C1D27 /* DataSourceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		7885EEE222C943B9003C1D27 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		7885EEE322C943B9003C1D27 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		7885EEE422C943B9003C1D27 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		7885EEE722C94469003C1D27 /* DataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceManager.m; sourceTree = "<group>"; };
+		7885EEE822C94469003C1D27 /* DataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 		7885EEDB22C942BE003C1D27 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7885EEE822C94469003C1D27 /* DataSourceManager.h */,
+				7885EEE722C94469003C1D27 /* DataSourceManager.m */,
 				7885EEE022C9438C003C1D27 /* DB */,
 				7885EEDC22C942CF003C1D27 /* File */,
 			);
@@ -311,6 +316,7 @@
 				7885EEAF22C9361F003C1D27 /* main.m in Sources */,
 				7885EEE522C943B9003C1D27 /* Photo.m in Sources */,
 				7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */,
+				7885EEE922C9446A003C1D27 /* DataSourceManager.m in Sources */,
 				7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */,
 				7885EEA122C9361D003C1D27 /* AppDelegate.m in Sources */,
 				7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */,
