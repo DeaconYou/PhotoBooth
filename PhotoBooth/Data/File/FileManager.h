@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)createDirectoryIfNotExists:(NSString *)directory;
 
+- (NSString *)getImagePathWithFileName:(NSString *)fileName;
+
 @end
 
 NS_ASSUME_NONNULL_END

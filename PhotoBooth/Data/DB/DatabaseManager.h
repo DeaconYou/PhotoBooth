@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)selectAllPhotos;
 
+- (BOOL)deletePhoto:(Photo *)photo;
+
 @end
 
 NS_ASSUME_NONNULL_END

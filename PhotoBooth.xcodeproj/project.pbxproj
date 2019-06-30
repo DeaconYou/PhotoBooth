@@ -13,7 +13,7 @@
 		7885EEA922C9361F003C1D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7885EEA822C9361F003C1D27 /* Assets.xcassets */; };
 		7885EEAC22C9361F003C1D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7885EEAA22C9361F003C1D27 /* LaunchScreen.storyboard */; };
 		7885EEAF22C9361F003C1D27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEAE22C9361F003C1D27 /* main.m */; };
-		7885EEB922C9361F003C1D27 /* PhotoBoothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEB822C9361F003C1D27 /* PhotoBoothTests.m */; };
+		7885EEB922C9361F003C1D27 /* FileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEB822C9361F003C1D27 /* FileManagerTests.m */; };
 		7885EEC522C936ED003C1D27 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7885EEC422C936ED003C1D27 /* libsqlite3.dylib */; };
 		7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EECD22C93ECC003C1D27 /* MainViewController.m */; };
 		7885EED422C94000003C1D27 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED022C93FFF003C1D27 /* StringUtils.m */; };
@@ -29,6 +29,8 @@
 		7885EEF722C945DD003C1D27 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEF522C945DD003C1D27 /* PhotoTableViewCell.m */; };
 		7885EEFB22C946E3003C1D27 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEFA22C946E3003C1D27 /* PhotoViewController.m */; };
 		7885EEFF22C94760003C1D27 /* PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEFE22C94760003C1D27 /* PhotoListViewController.m */; };
+		7885EF0122C957EF003C1D27 /* DatabaseManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EF0022C957EF003C1D27 /* DatabaseManagerTests.m */; };
+		7885EF0322C95F18003C1D27 /* AsyncOperationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EF0222C95F18003C1D27 /* AsyncOperationManagerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,7 @@
 		7885EEAD22C9361F003C1D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7885EEAE22C9361F003C1D27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7885EEB422C9361F003C1D27 /* PhotoBoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7885EEB822C9361F003C1D27 /* PhotoBoothTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBoothTests.m; sourceTree = "<group>"; };
+		7885EEB822C9361F003C1D27 /* FileManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
 		7885EEBA22C9361F003C1D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7885EEC422C936ED003C1D27 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		7885EECC22C93ECC003C1D27 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		7885EEFA22C946E3003C1D27 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		7885EEFD22C94760003C1D27 /* PhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListViewController.h; sourceTree = "<group>"; };
 		7885EEFE22C94760003C1D27 /* PhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListViewController.m; sourceTree = "<group>"; };
+		7885EF0022C957EF003C1D27 /* DatabaseManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseManagerTests.m; sourceTree = "<group>"; };
+		7885EF0222C95F18003C1D27 /* AsyncOperationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncOperationManagerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +153,10 @@
 		7885EEB722C9361F003C1D27 /* PhotoBoothTests */ = {
 			isa = PBXGroup;
 			children = (
-				7885EEB822C9361F003C1D27 /* PhotoBoothTests.m */,
+				7885EEB822C9361F003C1D27 /* FileManagerTests.m */,
 				7885EEBA22C9361F003C1D27 /* Info.plist */,
+				7885EF0022C957EF003C1D27 /* DatabaseManagerTests.m */,
+				7885EF0222C95F18003C1D27 /* AsyncOperationManagerTests.m */,
 			);
 			path = PhotoBoothTests;
 			sourceTree = "<group>";
@@ -397,7 +403,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7885EEB922C9361F003C1D27 /* PhotoBoothTests.m in Sources */,
+				7885EF0122C957EF003C1D27 /* DatabaseManagerTests.m in Sources */,
+				7885EEB922C9361F003C1D27 /* FileManagerTests.m in Sources */,
+				7885EF0322C95F18003C1D27 /* AsyncOperationManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -71,7 +71,7 @@ sqlite3 *_db;
         NSLog(@"%s", errmsg);
     }
     
-    return result;
+    return result == SQLITE_OK;
 }
 
 - (NSArray *)selectAllPhotos{
@@ -101,6 +101,18 @@ sqlite3 *_db;
     }
     
     return photos;
+}
+
+- (BOOL)deletePhoto:(Photo *)photo{
+    NSString *sql=[NSString stringWithFormat:@"DELETE FROM t_photo WHERE name='%@' AND created_timestamp=%f;", ([StringUtils isBlank:photo.name] ? @"" : photo.name), photo.createdTimestamp];
+    
+    char *errmsg=NULL;
+    int result = sqlite3_exec(_db, sql.UTF8String, NULL, NULL, &errmsg);
+    if (errmsg) {
+        NSLog(@"%s", errmsg);
+    }
+    
+    return result == SQLITE_OK;
 }
 
 @end

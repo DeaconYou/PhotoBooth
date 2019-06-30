@@ -61,8 +61,22 @@
     NSOperation *operation = (NSOperation *)[_operationDict objectForKey:key];
     if(operation && !operation.isCancelled){
         [operation cancel];
-        [self.operationDict removeObjectForKey:key];
+        [_operationDict removeObjectForKey:key];
     }
+}
+
+- (int)getCountOfOperationsInOperationQueue{
+    NSArray *operations = [_operationQueue operations];
+    
+    if(operations && operations.count > 0){
+        return (int)operations.count;
+    }else{
+        return 0;
+    }
+}
+
+- (int)getCountOfOperationDict{
+    return (int)_operationDict.count;
 }
 
 @end

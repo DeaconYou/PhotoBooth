@@ -24,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)cancelOperationIfNeededWithKey:(NSString *)key;
 
+- (int)getCountOfOperationsInOperationQueue;
+
+- (int)getCountOfOperationDict;
+
 @end
 
 NS_ASSUME_NONNULL_END
