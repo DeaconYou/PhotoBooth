@@ -20,6 +20,8 @@
 		7885EED522C94000003C1D27 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED122C93FFF003C1D27 /* UIUtils.m */; };
 		7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED822C941F7003C1D27 /* AsyncOperationManager.m */; };
 		7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEDE22C9432D003C1D27 /* FileManager.m */; };
+		7885EEE522C943B9003C1D27 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE222C943B9003C1D27 /* Photo.m */; };
+		7885EEE622C943B9003C1D27 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE322C943B9003C1D27 /* DatabaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		7885EED922C941F7003C1D27 /* AsyncOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperationManager.h; sourceTree = "<group>"; };
 		7885EEDD22C9432D003C1D27 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		7885EEDE22C9432D003C1D27 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		7885EEE122C943B9003C1D27 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		7885EEE222C943B9003C1D27 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		7885EEE322C943B9003C1D27 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		7885EEE422C943B9003C1D27 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,7 @@
 		7885EEDB22C942BE003C1D27 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7885EEE022C9438C003C1D27 /* DB */,
 				7885EEDC22C942CF003C1D27 /* File */,
 			);
 			path = Data;
@@ -186,6 +193,17 @@
 				7885EEDE22C9432D003C1D27 /* FileManager.m */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		7885EEE022C9438C003C1D27 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				7885EEE122C943B9003C1D27 /* DatabaseManager.h */,
+				7885EEE322C943B9003C1D27 /* DatabaseManager.m */,
+				7885EEE422C943B9003C1D27 /* Photo.h */,
+				7885EEE222C943B9003C1D27 /* Photo.m */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +309,12 @@
 				7885EEA422C9361D003C1D27 /* ViewController.m in Sources */,
 				7885EED422C94000003C1D27 /* StringUtils.m in Sources */,
 				7885EEAF22C9361F003C1D27 /* main.m in Sources */,
+				7885EEE522C943B9003C1D27 /* Photo.m in Sources */,
 				7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */,
 				7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */,
 				7885EEA122C9361D003C1D27 /* AppDelegate.m in Sources */,
 				7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */,
+				7885EEE622C943B9003C1D27 /* DatabaseManager.m in Sources */,
 				7885EED522C94000003C1D27 /* UIUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
