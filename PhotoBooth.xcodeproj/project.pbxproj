@@ -23,6 +23,8 @@
 		7885EEE522C943B9003C1D27 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE222C943B9003C1D27 /* Photo.m */; };
 		7885EEE622C943B9003C1D27 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE322C943B9003C1D27 /* DatabaseManager.m */; };
 		7885EEE922C9446A003C1D27 /* DataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE722C94469003C1D27 /* DataSourceManager.m */; };
+		7885EEEF22C94531003C1D27 /* ViewModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEED22C94531003C1D27 /* ViewModelManager.m */; };
+		7885EEF022C94531003C1D27 /* PhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEEE22C94531003C1D27 /* PhotoViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		7885EEE422C943B9003C1D27 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		7885EEE722C94469003C1D27 /* DataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceManager.m; sourceTree = "<group>"; };
 		7885EEE822C94469003C1D27 /* DataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceManager.h; sourceTree = "<group>"; };
+		7885EEEB22C94531003C1D27 /* PhotoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewModel.h; sourceTree = "<group>"; };
+		7885EEEC22C94531003C1D27 /* ViewModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelManager.h; sourceTree = "<group>"; };
+		7885EEED22C94531003C1D27 /* ViewModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelManager.m; sourceTree = "<group>"; };
+		7885EEEE22C94531003C1D27 /* PhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		7885EE9E22C9361D003C1D27 /* PhotoBooth */ = {
 			isa = PBXGroup;
 			children = (
+				7885EEEA22C944FD003C1D27 /* ViewModels */,
 				7885EEDB22C942BE003C1D27 /* Data */,
 				7885EED722C941B1003C1D27 /* Threading */,
 				7885EECF22C93F69003C1D27 /* Utils */,
@@ -211,6 +218,17 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		7885EEEA22C944FD003C1D27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7885EEEB22C94531003C1D27 /* PhotoViewModel.h */,
+				7885EEEE22C94531003C1D27 /* PhotoViewModel.m */,
+				7885EEEC22C94531003C1D27 /* ViewModelManager.h */,
+				7885EEED22C94531003C1D27 /* ViewModelManager.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -311,10 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7885EEEF22C94531003C1D27 /* ViewModelManager.m in Sources */,
 				7885EEA422C9361D003C1D27 /* ViewController.m in Sources */,
 				7885EED422C94000003C1D27 /* StringUtils.m in Sources */,
 				7885EEAF22C9361F003C1D27 /* main.m in Sources */,
 				7885EEE522C943B9003C1D27 /* Photo.m in Sources */,
+				7885EEF022C94531003C1D27 /* PhotoViewModel.m in Sources */,
 				7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */,
 				7885EEE922C9446A003C1D27 /* DataSourceManager.m in Sources */,
 				7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */,
