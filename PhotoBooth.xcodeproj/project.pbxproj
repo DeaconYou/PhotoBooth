@@ -25,6 +25,8 @@
 		7885EEE922C9446A003C1D27 /* DataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEE722C94469003C1D27 /* DataSourceManager.m */; };
 		7885EEEF22C94531003C1D27 /* ViewModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEED22C94531003C1D27 /* ViewModelManager.m */; };
 		7885EEF022C94531003C1D27 /* PhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEEE22C94531003C1D27 /* PhotoViewModel.m */; };
+		7885EEF622C945DD003C1D27 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEF422C945DD003C1D27 /* AsyncImageView.m */; };
+		7885EEF722C945DD003C1D27 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEF522C945DD003C1D27 /* PhotoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,10 @@
 		7885EEEC22C94531003C1D27 /* ViewModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelManager.h; sourceTree = "<group>"; };
 		7885EEED22C94531003C1D27 /* ViewModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelManager.m; sourceTree = "<group>"; };
 		7885EEEE22C94531003C1D27 /* PhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewModel.m; sourceTree = "<group>"; };
+		7885EEF222C945DD003C1D27 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		7885EEF322C945DD003C1D27 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		7885EEF422C945DD003C1D27 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		7885EEF522C945DD003C1D27 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		7885EE9E22C9361D003C1D27 /* PhotoBooth */ = {
 			isa = PBXGroup;
 			children = (
+				7885EEF122C945B1003C1D27 /* Views */,
 				7885EEEA22C944FD003C1D27 /* ViewModels */,
 				7885EEDB22C942BE003C1D27 /* Data */,
 				7885EED722C941B1003C1D27 /* Threading */,
@@ -229,6 +236,17 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		7885EEF122C945B1003C1D27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7885EEF222C945DD003C1D27 /* AsyncImageView.h */,
+				7885EEF422C945DD003C1D27 /* AsyncImageView.m */,
+				7885EEF322C945DD003C1D27 /* PhotoTableViewCell.h */,
+				7885EEF522C945DD003C1D27 /* PhotoTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +352,7 @@
 				7885EED422C94000003C1D27 /* StringUtils.m in Sources */,
 				7885EEAF22C9361F003C1D27 /* main.m in Sources */,
 				7885EEE522C943B9003C1D27 /* Photo.m in Sources */,
+				7885EEF722C945DD003C1D27 /* PhotoTableViewCell.m in Sources */,
 				7885EEF022C94531003C1D27 /* PhotoViewModel.m in Sources */,
 				7885EEDF22C9432D003C1D27 /* FileManager.m in Sources */,
 				7885EEE922C9446A003C1D27 /* DataSourceManager.m in Sources */,
@@ -342,6 +361,7 @@
 				7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */,
 				7885EEE622C943B9003C1D27 /* DatabaseManager.m in Sources */,
 				7885EED522C94000003C1D27 /* UIUtils.m in Sources */,
+				7885EEF622C945DD003C1D27 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
