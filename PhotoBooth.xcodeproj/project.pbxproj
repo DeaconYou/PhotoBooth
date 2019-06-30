@@ -15,6 +15,10 @@
 		7885EEAF22C9361F003C1D27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEAE22C9361F003C1D27 /* main.m */; };
 		7885EEB922C9361F003C1D27 /* PhotoBoothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EEB822C9361F003C1D27 /* PhotoBoothTests.m */; };
 		7885EEC522C936ED003C1D27 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7885EEC422C936ED003C1D27 /* libsqlite3.dylib */; };
+		7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EECD22C93ECC003C1D27 /* MainViewController.m */; };
+		7885EED422C94000003C1D27 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED022C93FFF003C1D27 /* StringUtils.m */; };
+		7885EED522C94000003C1D27 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED122C93FFF003C1D27 /* UIUtils.m */; };
+		7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7885EED822C941F7003C1D27 /* AsyncOperationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		7885EEB822C9361F003C1D27 /* PhotoBoothTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBoothTests.m; sourceTree = "<group>"; };
 		7885EEBA22C9361F003C1D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7885EEC422C936ED003C1D27 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		7885EECC22C93ECC003C1D27 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7885EECD22C93ECC003C1D27 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7885EED022C93FFF003C1D27 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		7885EED122C93FFF003C1D27 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
+		7885EED222C93FFF003C1D27 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		7885EED322C94000003C1D27 /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
+		7885EED822C941F7003C1D27 /* AsyncOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperationManager.m; sourceTree = "<group>"; };
+		7885EED922C941F7003C1D27 /* AsyncOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperationManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,9 @@
 		7885EE9E22C9361D003C1D27 /* PhotoBooth */ = {
 			isa = PBXGroup;
 			children = (
+				7885EED722C941B1003C1D27 /* Threading */,
+				7885EECF22C93F69003C1D27 /* Utils */,
+				7885EECA22C93E6C003C1D27 /* Controllers */,
 				7885EE9F22C9361D003C1D27 /* AppDelegate.h */,
 				7885EEA022C9361D003C1D27 /* AppDelegate.m */,
 				7885EEA222C9361D003C1D27 /* ViewController.h */,
@@ -113,6 +128,43 @@
 				7885EEC422C936ED003C1D27 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7885EECA22C93E6C003C1D27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7885EECB22C93EA6003C1D27 /* MainScreen */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7885EECB22C93EA6003C1D27 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7885EECC22C93ECC003C1D27 /* MainViewController.h */,
+				7885EECD22C93ECC003C1D27 /* MainViewController.m */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		7885EECF22C93F69003C1D27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7885EED222C93FFF003C1D27 /* StringUtils.h */,
+				7885EED022C93FFF003C1D27 /* StringUtils.m */,
+				7885EED322C94000003C1D27 /* UIUtils.h */,
+				7885EED122C93FFF003C1D27 /* UIUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7885EED722C941B1003C1D27 /* Threading */ = {
+			isa = PBXGroup;
+			children = (
+				7885EED922C941F7003C1D27 /* AsyncOperationManager.h */,
+				7885EED822C941F7003C1D27 /* AsyncOperationManager.m */,
+			);
+			path = Threading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7885EEA422C9361D003C1D27 /* ViewController.m in Sources */,
+				7885EED422C94000003C1D27 /* StringUtils.m in Sources */,
 				7885EEAF22C9361F003C1D27 /* main.m in Sources */,
+				7885EEDA22C941F7003C1D27 /* AsyncOperationManager.m in Sources */,
 				7885EEA122C9361D003C1D27 /* AppDelegate.m in Sources */,
+				7885EECE22C93ECC003C1D27 /* MainViewController.m in Sources */,
+				7885EED522C94000003C1D27 /* UIUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
